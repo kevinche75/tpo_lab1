@@ -12,7 +12,7 @@ public class CosTaylor {
         double step = 1;
         int i;
         for (i = 1; step > accuracy && i != Integer.MAX_VALUE; i++){
-            step = step*x_norm*x_norm/(2*i-1)/(2*i);
+            step = step*x_norm*x_norm/(2*i)/(2*i);
             if (i % 2 == 1){
                 result -= step;
             } else {
